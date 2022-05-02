@@ -1,7 +1,7 @@
 import { Button } from 'bootstrap';
 import React, { Component } from 'react';
 import Counter from './counter';
-class counters extends Component {
+class Counters extends Component {
     state = {
         counters: [
             { id: 1, value: 3 },
@@ -31,7 +31,7 @@ class counters extends Component {
 
     render() {
         return (
-            <div>
+            <div className="m-3">
                 <button onClick={this.handleReset} className="btn btn-primary">
                     reset
                 </button>
@@ -50,4 +50,4 @@ class counters extends Component {
     }
 }
 
-export default counters;
+export default Counters;
